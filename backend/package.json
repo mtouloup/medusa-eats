@@ -40,7 +40,8 @@
     "lucide-react": "^0.379.0",
     "pg": "^8.13.0",
     "prism-react-renderer": "^2.0.4",
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "zod": "^3.25.64"
   },
   "devDependencies": {
     "@medusajs/test-utils": "2.0.0",
