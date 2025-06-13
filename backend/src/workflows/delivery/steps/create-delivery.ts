@@ -8,7 +8,7 @@ export const createDeliveryStep = createStep(
   async function ({}, { container }) {
     const service = container.resolve(DELIVERY_MODULE);
 
-    const delivery = await service.createDeliveries({}) as DeliveryDTO
+    const delivery = (await service.createDeliveries({})) as unknown as DeliveryDTO
 
     return new StepResponse(delivery, {
       delivery_id: delivery.id,
